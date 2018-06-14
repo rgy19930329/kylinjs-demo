@@ -3,10 +3,6 @@ KY.onGet('/', async (ctx, next) => {
   ctx.body = 'rgy';
 });
 
-KY.onGet('/t1', async (ctx, next) => {
-  console.log('t1 11111');
-});
-
 KY.onGet('/t1/user', async (ctx, next) => {
   ctx.body = 'rgy t1 user';
 });
@@ -26,7 +22,7 @@ KY.onGet('/t4', async (ctx, next) => {
 KY.onGet('/t5', async (ctx, next) => {
   ctx.send({
     name: 'rgy',
-    mobile: '13996022245'
+    mobile: '139*****245'
   });
 });
 
@@ -62,6 +58,4 @@ KY.onGet('/t8', async (ctx, next) => {
   var r = await KY.httpClient.mockPost(params);
   ctx.send(r);
 });
-
-
 
