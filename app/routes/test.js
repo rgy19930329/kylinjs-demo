@@ -30,7 +30,7 @@ KY.onGet('/index', async (ctx) => {
   var r = await KY.httpClient.mock();
   // KY.logger(JSON.stringify(r));
   ctx.render('views/index.html', {
-    title: 'todolist',
+    title: 'index',
     list: r.data.projects,
     // list: [],
   });

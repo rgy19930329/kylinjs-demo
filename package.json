@@ -6,8 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node www",
-    "boot": "NODE_ENV=dev supervisor node www",
-    "static": "cd app/webroot && kys release debug -cw"
+    "boot": "NODE_ENV=dev supervisor -i ./node_modules node www",
+    "static": "cd app/webroot && kys release debug -cw",
+    "static-dev": "cd app/webroot && kys release dev -c",
+    "static-prod": "cd app/webroot && kys release prod -c"
   },
   "keywords": [
     "kylinjs",
